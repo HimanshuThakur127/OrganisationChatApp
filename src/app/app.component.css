@@ -1,0 +1,29 @@
+.head-nav{
+    width: 100vw;
+    height: 35px;
+    background-color: #040923;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    display:flex;
+    left:0px;
+    top: 0px;
+}
+.menu-main-button{
+  background-color: #040923;
+  border: 0px;
+  outline: none;
+  color: #ffffff;
+}
+.menu-button-image{
+  width: 40px;
+  outline: none;
+}
+.head-menu-button,.company-name{
+  padding-left:10px;
+  padding-top: 10px; 
+}
+.option-button:hover{
+   color: white;
+   background-color:#040923; 
+}

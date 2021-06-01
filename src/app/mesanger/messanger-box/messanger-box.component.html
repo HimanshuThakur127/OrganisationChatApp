@@ -1,0 +1,20 @@
+<div class="msg-container">
+  <div class="msg-container-box">
+
+  </div>
+  <div class="msg-container-input">
+     <div class="upload-sign">
+      <button mat-button [matMenuTriggerFor]="menu" class="upload-sign-img"><img src="../../../assets/images/baseline_add_white_18dp.png" alt="#" class="uploadSignimg"></button>
+      <mat-menu #menu="matMenu">
+          <div class="upload-text" >New...</div>
+          <button mat-menu-item class="button-upload"> <img src="../../../assets/images/icons8-code-50.png" alt="#" class="butt-img">Code or text snippet</button>
+          <button mat-menu-item class="button-upload"> <img src="../../../assets/images/icons8-google-drive-32.png" alt="#" class="butt-img"> Google Docs file</button>
+          <hr>
+        <div class="upload-text" >Add file from...</div>
+        <button mat-menu-item  class="button-upload"> <img src="../../../assets/images/icons8-google-drive-32.png" alt="#" class="butt-img">Your Computer</button>
+        <button mat-menu-item class="button-upload"> <img src="../../../assets/images/icons8-laptop-filled-50.png" alt="#" class="butt-img">Google Drive</button>
+      </mat-menu>
+     </div>
+     <input type="text" class="msg-write-box" placeholder="message">
+  </div>
+</div>

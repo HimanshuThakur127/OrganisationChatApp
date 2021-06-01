@@ -1,0 +1,13 @@
+<div class="head-nav">
+    <div class="menu-button">
+        <button mat-button [matMenuTriggerFor]="menu" class="menu-main-button"><img src="../assets/images/baseline_view_headline_white_18dp.png" alt="add" class="menu-button-image"></button>
+        <mat-menu #menu="matMenu">
+         <button mat-menu-item class="option-button">Messenger</button>
+         <button mat-menu-item class="option-button">Project Schedule</button>
+         <button mat-menu-item class="option-button">Task Management</button>
+        </mat-menu>
+    </div>
+   
+    <div class="company-name">Company-{{company}}</div>
+</div>
+<app-mesanger></app-mesanger>

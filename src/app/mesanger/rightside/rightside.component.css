@@ -1,0 +1,57 @@
+.right-side-container{
+    position: absolute;
+    right: 0px;
+    top: 86px;
+    width:31.6vw;
+    bottom: 0px;
+}
+.right-side-header{
+    background-color: rgb(238, 235, 235);
+    position: relative;
+    text-align: center;
+    height: 50px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-family: 'Lucida Sans';
+    border: 2px solid rgb(185, 183, 183);
+}
+.right-side-body{
+    background-color:#f5efefd8;
+    position: absolute;
+    width: 31.5vw;
+}
+.user-detail{
+    border-bottom: 1px solid rgb(185, 183, 183);
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #000000;;
+    font-size: 20px;
+}
+.user-pin-msg{
+    border-bottom: 1px solid rgb(185, 183, 183);
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font: 30px;
+    color: #000000;
+}
+.open-pin-1, .open-pin-2{
+    right: 1px;
+    position: absolute;
+}
+.user-upload-msg{
+    border-bottom: 1px solid rgb(185, 183, 183);
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font: 30px;
+    color: #000000; 
+}
+.user-name{
+    padding-left: 40px;
+}
+.locate-img{
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,51 @@
+﻿schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
+
+type Mutation {
+  addMember(dirId: Int!, members: String!): response
+  createChannel(case: String!, createrId: ID!, discription: String!, members: String!, name: String!, orgId: Int!): response
+  createDirect(case: String!, creater: String!, createrId: Int!, memId: Int!, member: String!, orgId: Int!): response
+  deleteEmp(empId: Int!, orgId: Int!): response
+  pinnedDoc(case: String!, msgId: Int!, pinned: Int!): response
+  putMessage(case: String!, content: String, contentType: String!, doc: String, msgType: String!, receiverId: Int!, senderId: Int!, senderName: String!): response
+  registerEmployee(case: String!, compCode: String!, email: String!, isactive: String!, name: String!, password: String!): response
+  registerOrganisation(case: String!, compCode: String!, email: String!, name: String!, password: String!): response
+  updateCodeMessage(case: String!, doc: String!, msgId: Int!, msgType: String!, receiverId: Int!): response
+  updateTypeEmp(empId: Int!, empType: String!, orgId: Int!): response
+  verifyEmail(email: String!): response
+}
+
+type Query {
+  getAllCompEmp(case: String!, orgId: Int!): response
+  getAllGrp(case: String!, orgId: Int!): response
+  getAllLoginEmail(case: String!): response
+  getAllUser(case: String!): response
+  getChannels(case: String!, empId: Int!, orgId: Int!): response
+  getCompCode(case: String!, orgId: Int!): response
+  getDirect(case: String!, empId: Int!): response
+  getDocument(Id: Int!, orgId: Int!, type: String!): response
+  getEmployee(case: String!, email: String!, password: String!): response
+  getEmployeeDetail(case: String!, empId: Int!): response
+  getMembersOfChannel(case: String!, chId: Int!): response
+  getMessages(case: String!, msgId: Int!, msgType: String!, receiverId: Int!): response
+  getOrganisation(email: String!, password: String!): response
+  getOrganisationId(compCode: String!): response
+  getStateAdmin(case: String!): response
+  getmember(email: String!): response
+}
+
+type Subscription {
+  getcode: response @aws_subscribe(mutations : ["updateCodeMessage"])
+  getmessage: response @aws_subscribe(mutations : ["putMessage"])
+}
+
+type response {
+  result: String
+}
+
+input members {
+  memId: Int!
+}
